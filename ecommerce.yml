@@ -1,6 +1,6 @@
 token:
   expiration_time: 86400000
-  secret: value1
+  secret: youzheng_secret_key
 
 gateway:
   ip: 192.168.1.40
