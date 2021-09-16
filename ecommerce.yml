@@ -1,9 +1,9 @@
 token:
   expiration_time: 86400000
-  secret: youzheng_secret_key
+  secret: '{cipher}AQAx0Jhi4V8+N3VRs2mHL63NA90K8Tm7RgpgaxdtQhQ2XKzMiD8V8nUTqeDWGNYyZPokGm82xLtoDtvg/8G6F+luAKI2TCvj5oAoQlA9UXh1itHJw7AglyjBI37+WuLb2l25PQnJMdpjTxSvW+CLpj9ZzSQwUrkDAf32+GURjjPAoeU2UmHWs2boZuAVlCqWgGXmts9DL8obTd1GidnerIhy3Pefd3j+SR525oNsF47Wrv0jNTQjx2xj8OkSZYKdw9WwYJceAPEcSuGCryGbk2JzIF8jt+iaXUint7QbMA/mjEZvNo6SaOALyvzyjlJ8jx6tndG9XiMtIq87KJQq5GTdHxodnKrAXE/XrF0jmXNI+lvCdfZmadfxCB9NdZH2Ygs1vXTMbGrnxs4cSJjybMRK'
 
 gateway:
   ip: 192.168.1.40
 
 application:
-  message: Default Message
+  message: Ecommerce yml

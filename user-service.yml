@@ -1,0 +1,25 @@
+gateway:
+  ip: 192.168.1.40
+
+application:
+  message: Bus Message~~~~
+
+spring:
+  datasource:
+    #    username: root
+    #    password: dnwjd123
+    username: '{cipher}AQAYb4GoiynLfkzzU0x8dbpkPJYl8toIFYop5Daa73ajBCUsxtITUB38fMQAMBrmCLDqxngd8s4kwJ+XmmjV5b+VBqvNCEcXyhAvJZ5eKBk1PrnGOa8o/HUnLmnHgiQ4TuOIZrJwiJoV3v1GGzFzCw6NBjz+wNXE6HUuVflOgI1xsFNPlgkKgu9LAi/ugZ3AlePSwRkU7XYZBSGJzaA9wqELiEhwTq1GyC2VSI1Rx5u6QFYRYWMdQbcovpXspZWF8ucj707Jtc8+i40EUdCfH8sxHRRsuayb+2Dfvlf/Bl5VedgAa3e55K3jnDzMVUagJNQBCi85wFduUcFLoHqCThidJHVFZ6WlNKvO2FFLmYudiBzAoPax6B6YbvR1Ms0wmmw='
+    password: '{cipher}AQB8RGf7Edr6aURU4t/9mKFo+DtV1S/+/euydXzk/4VaYPOdJlWsafo/NRWsnac9ldzGOhdW/OhSnesSJsoyGJfOuiqu8R2OGirUjf+MdKsIELqkz/dPY0BFS5fgCp7Jvvc5cKgZvAPESBdHbKoPIL2lSM7AfEkH65wDRodVkMAFSV8eeDid/dsa9LD0MUUKyS9HtMM5uUDksXRx6dsSqr5QHqd7ESzga4jgINHFqEMO8X20sT4+CrZ6LcUlt3GM7yeZhP7Q5NmAcBQdAM2RIYH/vRLrd1g6cm5Canl2Hw/Lr9BeOwpCXoKegsjUo2nuSgz3ZBlbeMimPscfbMt1m2lufJHBW9yFGN06SR9UujsNJXnDOjZDXH8KK/WB5mbtWQY='
+    url: "jdbc:mysql://localhost:3306/ecommerce"
+    driver-class-name: com.mysql.jdbc.Driver
+
+token:
+  expiration_time: 86400000
+  secret: '{cipher}AQAx0Jhi4V8+N3VRs2mHL63NA90K8Tm7RgpgaxdtQhQ2XKzMiD8V8nUTqeDWGNYyZPokGm82xLtoDtvg/8G6F+luAKI2TCvj5oAoQlA9UXh1itHJw7AglyjBI37+WuLb2l25PQnJMdpjTxSvW+CLpj9ZzSQwUrkDAf32+GURjjPAoeU2UmHWs2boZuAVlCqWgGXmts9DL8obTd1GidnerIhy3Pefd3j+SR525oNsF47Wrv0jNTQjx2xj8OkSZYKdw9WwYJceAPEcSuGCryGbk2JzIF8jt+iaXUint7QbMA/mjEZvNo6SaOALyvzyjlJ8jx6tndG9XiMtIq87KJQq5GTdHxodnKrAXE/XrF0jmXNI+lvCdfZmadfxCB9NdZH2Ygs1vXTMbGrnxs4cSJjybMRK'
+
+order_service:
+  url: http://ORDER-SERVICE/order-service/%s/orders
+  # http://${microservice name}/... 해당 서비스에 접근하는 클라이언트의 RestTemplate 의 @Bean 위에 @Loadbalanced 를 추가할 경우에 생략할 수 있다.
+  exception:
+    order_is_empty: User's orders is empty
+
